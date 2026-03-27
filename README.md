@@ -127,7 +127,9 @@ This dashboard tracks agent efficiency and ticket handling trends.
 -Customer Feedback: Highlights that 100% of tickets have feedback, with a breakdown of High Satisfaction (40.42%) vs. Low Satisfaction (40.44%).
 -Geographic & Trend Analysis: Shows Open Tickets MoM (Month-on-Month) growth by state and overall trends to identify regional service issues.
 -Customer Segmentation: Categorizes ticket counts by Customer Type (Loyal, Regular, Unknown) and provides a list of Top Customers based on their satisfaction levels.
-<img width="1380" height="776" alt="Screenshot (932)" src="https://github.com/user-attachments/assets/7f0d50db-5c10-4129-bf99-3cdfe4f198ba" />
+<img width="1420" height="799" alt="Screenshot (931)" src="https://github.com/user-attachments/assets/7bd94431-4c45-40b1-a03d-db61414cc8b6" />
+
+
 
 ---
 **Workload & Capacity Management Dashboard**
