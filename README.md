@@ -143,32 +143,23 @@ This dashboard monitors team productivity and workload distribution.
 
 
 
-## SQL Validation
+## SQL Queries & Data Modeling Sample
+```-- 1) Avg Resolution Days + Avg Resolution Hours (Basic)
+SELECT
+    ROUND(AVG(resolution_days), 2) AS avg_resolution_days,
+    ROUND(AVG(resolution_time_hour), 2) AS avg_resolution_hours
+FROM vw_fact_ticket
+WHERE resolution_days IS NOT NULL
+AND resolution_time_hour IS NOT NULL;
 
-SQL queries were used to verify:
-
-- Ticket counts  
-- Closed ticket counts  
-- SLA met numbers  
-- Resolution hours  
-- Priority-based performance  
-
-✔ Only SQL **screenshots** are included in this repository.  
-Folder: `SQL_Screenshots/`
-
----
-
-##  Project Deliverables
-
-This repository contains:
-
-- ✔ Power BI Dashboard Recording (Video)  
-- ✔ Power BI PBIX File  
-- ✔ Project PPT  
-- ✔ SQL Query Screenshots  
-- ✔ Dashboard images  
-- ✔ README documentation  
-
+-- 2) SLA Met %, SLA Breached %, & SLA Met Tickets (KPI cards)
+SELECT
+    ROUND(SUM(CASE WHEN sla_status = 'SLA Met' THEN 1 ELSE 0 END) / COUNT(*), 2) AS sla_met_pct,
+    ROUND(SUM(CASE WHEN sla_status = 'SLA Breached' THEN 1 ELSE 0 END) / COUNT(*), 2) AS sla_breached_pct,
+    SUM(CASE WHEN sla_status = 'SLA Met' THEN 1 ELSE 0 END) AS sla_met_tickets
+FROM vw_fact_ticket
+WHERE sla_status IS NOT NULL;
+```
 ---
 
 ##  How to View the Dashboard
