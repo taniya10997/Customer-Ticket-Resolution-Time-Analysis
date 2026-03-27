@@ -92,18 +92,10 @@ The data model includes:
 ---
 
 ##  Dashboard Screenshots
-
-(Add your images after uploading them into a **screenshots/** folder)
-
 Example:
+<img width="1369" height="772" alt="Screenshot (928)" src="https://github.com/user-attachments/assets/0bcc51a6-154b-485c-bef7-9543cd95398d" />
 
-![Dashboard Overview](screenshots/dashboard1.png)  
-![SLA Analysis](screenshots/dashboard2.png)  
-![Agent Performance](screenshots/dashboard3.png)
-
----
-
-##  SQL Validation
+## SQL Validation
 
 SQL queries were used to verify:
 
