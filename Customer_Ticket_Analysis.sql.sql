@@ -342,7 +342,7 @@ SELECT
   NULLIF(TRIM(resolution_bucket),'') AS resolution_bucket,
   CAST(NULLIF(TRIM(Year),'') AS UNSIGNED) AS year,
 
-  -- ✅ created_date safe
+  --  created_date safe
   CASE
     WHEN created_date IS NULL OR TRIM(created_date)='' THEN NULL
     WHEN TRIM(created_date) REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$'
@@ -352,7 +352,7 @@ SELECT
     ELSE NULL
   END AS created_date,
 
-  -- ✅ resolved_date safe
+  --  resolved_date safe
   CASE
     WHEN resolved_date IS NULL OR TRIM(resolved_date)='' THEN NULL
     WHEN TRIM(resolved_date) REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$'
@@ -362,7 +362,7 @@ SELECT
     ELSE NULL
   END AS resolved_date,
 
-  -- ✅ resolution_time_hour safe (no negative)
+  -- resolution_time_hour safe (no negative)
   CASE
     WHEN resolved_date IS NULL OR TRIM(resolved_date)='' THEN NULL
     WHEN created_date IS NULL OR TRIM(created_date)='' THEN NULL
@@ -370,7 +370,7 @@ SELECT
     ELSE TIMESTAMPDIFF(SECOND, CAST(TRIM(created_date) AS DATETIME), CAST(TRIM(resolved_date) AS DATETIME))/3600
   END AS resolution_time_hour,
 
-  -- ✅ resolution_days safe
+  --  resolution_days safe
   CASE
     WHEN resolved_date IS NULL OR TRIM(resolved_date)='' THEN NULL
     WHEN created_date IS NULL OR TRIM(created_date)='' THEN NULL
@@ -719,7 +719,7 @@ GROUP BY priority
 ORDER BY tickets DESC;
 
 
-#Q5)Agent Activity Heatmap (Agent x Priority) ✅ (Advanced)
+#Q5)Agent Activity Heatmap (Agent x Priority) (Advanced)
 SELECT
   a.agent_name,
   SUM(CASE WHEN f.priority='Critical' THEN 1 ELSE 0 END) AS critical_cnt,
@@ -817,7 +817,7 @@ SELECT
   SUM(CASE WHEN tickets < 20 THEN 1 ELSE 0 END) AS underutilized_agents,
   SUM(CASE WHEN tickets > 60 THEN 1 ELSE 0 END) AS overloaded_agents
 FROM a;
-#Q3) Capacity Segmentation (Balanced/Overloaded/Underutilized) ✅
+#Q3) Capacity Segmentation (Balanced/Overloaded/Underutilized) 
 WITH a AS (
   SELECT agent_id, COUNT(*) AS tickets
   FROM vw_fact_ticket
