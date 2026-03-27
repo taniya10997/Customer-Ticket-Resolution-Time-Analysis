@@ -92,8 +92,54 @@ The data model includes:
 ---
 
 ##  Dashboard Screenshots
-Example:
+**Executive Overview: Ticketing Dashboard**
+This dashboard tracks the overall performance of the ticket management system.
+-Key Stats: Managed 13K total tickets with an impressive 93.28% closure rate.
+-Insights: Displays ticket distribution by Priority, SLA Status, and Department.
+-Trends: Monitors monthly and yearly ticket volumes to analyze support efficiency and workload.
+
 <img width="1369" height="772" alt="Screenshot (928)" src="https://github.com/user-attachments/assets/0bcc51a6-154b-485c-bef7-9543cd95398d" />
+
+---
+**Resolution & SLA Analysis Dashboard**
+This dashboard focuses on support efficiency and SLA (Service Level Agreement) performance.
+-Key Metrics: Tracks an average resolution time of 6.42 days and 154 hours, with a total of 1,443 SLA Met tickets.
+-SLA Compliance: Highlights a critical 89% SLA Breach rate, showing the need for faster ticket resolution.
+-Performance Trends: Analyzes Avg Resolution Time by Month and SLA Compliance Trends to identify service gaps.
+-Ticket Breakdown: Categorizes tickets into Resolution Time Buckets (Slow, Medium, Fast) and provides granular details by agent and priority.
+
+<img width="1413" height="784" alt="Screenshot (929)" src="https://github.com/user-attachments/assets/8ed654ba-7e97-4d72-9b02-c4e91963ced6" />
+
+---
+**Agent Performance & Productivity Dashboard**
+This dashboard tracks agent efficiency and ticket handling trends.
+-Productivity Metrics: Monitors Tickets Handled vs. Resolution Time and identifies the Top 10 Agents by ticket volume.
+-Workload Distribution: Includes an Agent Activity Heatmap to track ticket priority distribution across the team.
+-Quality & Speed: Features Average Resolution Days by Agent and SLA Met % by Agent to measure service quality.
+-Key Stats: Provides a quick view of Total (13K), Open (847), and Closed (12K) tickets, along with a 93.28% closure rate.
+
+<img width="1394" height="796" alt="Screenshot (930)" src="https://github.com/user-attachments/assets/2a9331a5-6b0c-4675-a5b6-1588f6b2fc2e" />
+
+---
+**Customer & CSAT Insights Dashboard**
+-This dashboard focuses on customer satisfaction (CSAT) and feedback analysis.
+-CSAT Scores: Tracks Avg CSAT (2.99) and compares it across MTD (Month-to-Date) and YTD (Year-to-Date) to monitor service quality.
+-Customer Feedback: Highlights that 100% of tickets have feedback, with a breakdown of High Satisfaction (40.42%) vs. Low Satisfaction (40.44%).
+-Geographic & Trend Analysis: Shows Open Tickets MoM (Month-on-Month) growth by state and overall trends to identify regional service issues.
+-Customer Segmentation: Categorizes ticket counts by Customer Type (Loyal, Regular, Unknown) and provides a list of Top Customers based on their satisfaction levels.
+<img width="1380" height="776" alt="Screenshot (932)" src="https://github.com/user-attachments/assets/7f0d50db-5c10-4129-bf99-3cdfe4f198ba" />
+
+---
+**Workload & Capacity Management Dashboard**
+This dashboard monitors team productivity and workload distribution.
+-Capacity Metrics: Tracks Total Agents (320) and identifies 92 Overloaded Agents vs. 228 Underutilized Agents.
+-Workload Balance: Shows an Average of 39.26 tickets per agent, helping to manage a workload imbalance score of 0.29.
+-Efficiency Trends: Analyzes Workload Trends Over Time and correlates Workload vs. Resolution Efficiency.
+-Performance Ranking: Includes an Agent Consistency Ranking and segmentation to ensure balanced ticket distribution across departments.
+
+<img width="1380" height="776" alt="Screenshot (932)" src="https://github.com/user-attachments/assets/63c1ad3c-7d60-4bcb-851a-526d37f43d41" />
+
+
 
 ## SQL Validation
 
