@@ -176,10 +176,7 @@ WHERE sla_status IS NOT NULL;
 This project highlights how customer support operations can be improved by analyzing ticket resolution bottlenecks, SLA performance, and workload distribution.  
 The insights gained help organizations enhance operational efficiency and improve customer satisfaction.
 
----
 
-##  Contact
 
-**LinkedIn:** *www.linkedin.com/in/taniya-payal-090a0a281*  
-**GitHub:** *https://github.com/taniya10997*  
+  
 
